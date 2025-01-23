@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.UIComponents.forms.Menu">
+  <grid id="27dc6" binding="panel1" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="238" y="20" width="1589" height="569"/>
+    </constraints>
+    <properties>
+      <background color="-13882324"/>
+      <foreground color="-1"/>
+      <minimumSize width="0" height="0"/>
+      <name value=""/>
+      <opaque value="true"/>
+      <toolTipText value=""/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="5833d" class="javax.swing.JButton" binding="switchUserButton">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="250" bottom="100" right="0" weightx="0.5" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <actionCommand value=""/>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <label value=""/>
+          <maximumSize width="110" height="106"/>
+          <preferredSize width="110" height="106"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c2174" class="javax.swing.JButton" binding="ELOButton">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="100" right="0" weightx="0.5" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <maximumSize width="110" height="106"/>
+          <preferredSize width="110" height="106"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="63549" class="javax.swing.JButton" binding="creditsButton">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="100" right="250" weightx="0.5" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <label value=""/>
+          <maximumSize width="110" height="106"/>
+          <preferredSize width="110" height="106"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c11e0" class="javax.swing.JButton" binding="instructionButton">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="100" right="0" weightx="0.5" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <maximumSize width="110" height="106"/>
+          <preferredSize width="110" height="106"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="981f7" class="javax.swing.JButton" binding="playButton">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="70" left="400" bottom="20" right="400" weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <background color="-13882324"/>
+          <borderPainted value="false"/>
+          <contentAreaFilled value="false"/>
+          <focusPainted value="true"/>
+          <focusable value="true"/>
+          <font name="Arial Black" size="48" style="0"/>
+          <foreground color="-1"/>
+          <horizontalTextPosition value="0"/>
+          <label value="Spiel"/>
+          <maximumSize width="600" height="75"/>
+          <minimumSize width="-1" height="-1"/>
+          <opaque value="false"/>
+          <preferredSize width="600" height="75"/>
+          <rolloverEnabled value="false"/>
+          <text value="Spiel"/>
+          <verticalTextPosition value="0"/>
+        </properties>
+      </component>
+      <component id="a292" class="javax.swing.JLabel" binding="menu">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag top="100" left="0" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <background color="-13882324"/>
+          <font name="Arial Black" size="78" style="1"/>
+          <foreground color="-1"/>
+          <horizontalAlignment value="0"/>
+          <opaque value="false"/>
+          <text value="Menü"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
