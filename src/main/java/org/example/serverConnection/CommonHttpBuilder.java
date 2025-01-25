@@ -23,6 +23,7 @@ import org.example.serverConnection.dto.RegisterUserDto;
 import org.example.serverConnection.dto.TableDto;
 import org.example.serverConnection.responses.AccountDataResponse;
 import org.example.serverConnection.responses.LoginResponse;
+import org.example.serverConnection.responses.MultiEloResponse;
 import org.example.serverConnection.responses.TableResponse;
 import org.example.utils.logical.DotEnv;
 
@@ -139,6 +140,18 @@ public class CommonHttpBuilder {
         return objectMapper.readValue(response.body(), AccountDataResponse.class);
     }
 
+    public static MultiEloResponse fetchAllUsersElo() throws URISyntaxException, IOException, InterruptedException {
+        HttpRequest request = HttpRequest.newBuilder()
+                .uri(new URI("http://"+SERVER_ROOT+DotEnv.getValue("ALL_USER_ELO_PATH")))
+                .GET()
+                .header("Content-Type", "application/json")
+                .build();
+
+        HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+
+        if(response.statusCode() != 200) throw new WrongHttpCode(response.statusCode() ,"Response code not 200");
+        return objectMapper.readValue(response.body(), MultiEloResponse.class);
+    }
     /**
      * send request to fetch game data endpoint,
      * then builds the game and establish websocket connection

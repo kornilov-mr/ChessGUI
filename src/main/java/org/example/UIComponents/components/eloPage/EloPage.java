@@ -29,6 +29,7 @@ public class EloPage extends JPanel {
             frame.repaint();
         });
         add(new StatsPanel());
+        add(new LeaderBoard());
         add(backButton);
         frame.setContentPane(this);
         frame.setVisible(true);
